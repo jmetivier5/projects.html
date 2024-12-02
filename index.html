@@ -1,149 +1,159 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Joshua Metivier's Portfolio</title>
-   <style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joshua Metivier's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Knewave&family=Lobster&family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <style>
       /* Global Styles */
       body {
-         background-color: #4D4D4D;
-         font-family: 'JetBrains Mono', monospace;
-         margin: 0;
-         padding: 0;
+        background-color: #4D4D4D;
+        font-family: 'JetBrains Mono', monospace;
+        margin: 0;
+        padding: 0;
       }
 
       header {
-         background-color: #000;
-         text-align: center;
-         padding: 10px 0;
+        background-color: #000;
+        text-align: center;
+        padding: 10px 0;
       }
 
       footer {
-         background-color: #C09CCC;
-         text-align: center;
-         padding: 10px 0;
+        background-color: #C09CCC;
+        text-align: center;
+        padding: 10px 0;
       }
 
       /* Centering Banner Image */
       .center {
-         display: block;
-         margin: 0 auto;
-         width: 80%;
-         max-width: 600px;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 600px;
       }
 
       /* Navigation Bar */
       .navbar {
-         display: flex;
-         justify-content: center;
-         background-color: #000000;
-         padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        background-color: #000000;
+        padding: 10px 0;
       }
 
       .navbar a {
-         color: white;
-         text-decoration: none;
-         padding: 14px 20px;
-         font-family: 'JetBrains Mono', monospace;
-         font-size: 0.9rem;
-         text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.9rem;
+        text-transform: uppercase;
       }
 
       .navbar a:hover {
-         background-color: #575757;
-         color: yellow;
+        background-color: #575757;
+        color: yellow;
       }
 
       /* Main Heading */
       h1 {
-         padding: 50px 20px 20px 100px;
-         color: white;
-         font-size: 3rem;
-         margin: 0 0 10px;
+        padding: 50px 20px 20px 100px;
+        color: white;
+        font-size: 3rem;
+        margin: 0 0 10px;
       }
 
       /* Project Grid Styles */
       .project-grid {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
-         gap: 20px; /* Space between grid items */
-         padding: 20px;
+        display: grid;
+                /* CSS background-repeat Property: https://www.w3schools.com/cssref/pr_background-repeat.php*/
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        /* Space between grid items */
+        padding: 20px;
       }
 
       .project-item {
-         text-align: center;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         height: 700px; /* Uniform height for all items */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        /* Uniform height for all items */
       }
 
       .project-item img {
-         max-height: 90%; /* Prevents image from exceeding the container */
-         width: auto;
-         object-fit: contain; /* Scales image while preserving aspect ratio */
+        max-height: 90%;
+        /* Prevents image from exceeding the container */
+        width: auto;
+        object-fit: contain;
+        /* Scales image while preserving aspect ratio */
       }
 
       /* Responsive Design for Smaller Screens */
       @media screen and (max-width: 600px) {
-         .project-grid {
-            grid-template-columns: 1fr; /* Single column for small screens */
-         }
+        .project-grid {
+          grid-template-columns: 1fr;
+          /* Single column for small screens */
+        }
 
-         .project-item {
-            height: auto; /* Allow height to adjust for smaller screens */
-         }
+        .project-item {
+          height: auto;
+          /* Allow height to adjust for smaller screens */
+        }
 
-         h1 {
-            font-size: 2rem;
-           padding: 50px;
-         }
+        h1 {
+          font-size: 2rem;
+          padding: 50px;
+        }
       }
-   </style>
-</head>
+    </style>
+  </head>
 
-<body>
-   <!-- Header with Site Banner -->
-   <header>
+  <body>
+    <!-- Header with Site Banner -->
+    <header>
       <img src="site banner.jpg" alt="Site Banner" class="center">
-   </header>
+    </header>
 
-   <!-- Navigation Bar -->
-<nav class="navbar">
-   <a href="Metivier_Joshua_a3">Index</a>
-   <a href="projects.html">Projects</a>
-   <a href="about.html">About</a>
-   <a href="contact.html">Contact</a>
-</nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <a href="https://jmetivier5.github.io/Metivier_Joshua_a3/">Index</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-   <!-- Main Content Section -->
-   <main>
+    <!-- Main Content Section -->
+    <main>
       <section>
-         <h1>Featured <br>Projects</h1>
-         <div class="project-grid">
-            <div class="project-item">
-               <img src="InstaCore.png" alt="InstaCore Project">
-            </div>
-            <div class="project-item">
-               <img src="Elements.png" alt="Elements Project">
-            </div>
-            <div class="project-item">
-               <img src="StarKreutz.png" alt="StarKreutz Project">
-            </div>
-            <div class="project-item">
-               <img src="Poster project.png" alt="Poster Project">
-            </div>
-         </div>
+        <h1>Featured <br>Projects</h1>
+        <div class="project-grid">
+          <div class="project-item">
+            <img src="InstaCore.png" alt="InstaCore Project">
+          </div>
+          <div class="project-item">
+            <img src="Elements.png" alt="Elements Project">
+          </div>
+          <div class="project-item">
+            <img src="StarKreutz.png" alt="StarKreutz Project">
+          </div>
+          <div class="project-item">
+            <img src="Poster project.png" alt="Poster Project">
+          </div>
+        </div>
       </section>
-   </main>
+    </main>
 
-   <!-- Footer -->
-   <footer>
+    <!-- Footer -->
+    <footer>
       <p>&copy; 2024 Joshua Metivier</p>
-   </footer>
-</body>
+    </footer>
+  </body>
 
 </html>
