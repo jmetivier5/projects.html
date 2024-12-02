@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Knewave&family=Lobster&family=Radley:ital@0;1&display=swap" rel="stylesheet">
     <style>
-      /* Global Styles */
       body {
         background-color: #4D4D4D;
         font-family: 'JetBrains Mono', monospace;
@@ -29,7 +28,6 @@
         padding: 10px 0;
       }
 
-      /* Centering Banner Image */
       .center {
         display: block;
         margin: 0 auto;
@@ -37,7 +35,6 @@
         max-width: 600px;
       }
 
-      /* Navigation Bar */
       .navbar {
         display: flex;
         justify-content: center;
@@ -59,7 +56,6 @@
         color: yellow;
       }
 
-      /* Main Heading */
       h1 {
         padding: 50px 20px 20px 100px;
         color: white;
@@ -67,13 +63,11 @@
         margin: 0 0 10px;
       }
 
-      /* Project Grid Styles */
       .project-grid {
         display: grid;
-                /* CSS background-repeat Property: https://www.w3schools.com/cssref/pr_background-repeat.php*/
+        /* CSS background-repeat Property: https://www.w3schools.com/cssref/pr_background-repeat.php*/
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        /* Space between grid items */
         padding: 20px;
       }
 
@@ -84,27 +78,21 @@
         justify-content: center;
         align-items: center;
         height: 700px;
-        /* Uniform height for all items */
       }
 
       .project-item img {
         max-height: 90%;
-        /* Prevents image from exceeding the container */
         width: auto;
         object-fit: contain;
-        /* Scales image while preserving aspect ratio */
       }
 
-      /* Responsive Design for Smaller Screens */
       @media screen and (max-width: 600px) {
         .project-grid {
           grid-template-columns: 1fr;
-          /* Single column for small screens */
         }
 
         .project-item {
           height: auto;
-          /* Allow height to adjust for smaller screens */
         }
 
         h1 {
@@ -116,20 +104,17 @@
   </head>
 
   <body>
-    <!-- Header with Site Banner -->
     <header>
       <img src="site banner.jpg" alt="Site Banner" class="center">
     </header>
 
-    <!-- Navigation Bar -->
     <nav class="navbar">
       <a href="https://jmetivier5.github.io/Metivier_Joshua_a3/">Index</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="https://jmetivier5.github.io/projects.html/">Projects</a>
+      <a href="https://jmetivier5.github.io/about.html/">About</a>
+      <a href="https://jmetivier5.github.io/contact.html/">Contact</a>
     </nav>
 
-    <!-- Main Content Section -->
     <main>
       <section>
         <h1>Featured <br>Projects</h1>
@@ -150,7 +135,6 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer>
       <p>&copy; 2024 Joshua Metivier</p>
     </footer>
