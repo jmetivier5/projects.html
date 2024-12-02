@@ -14,6 +14,7 @@
         font-family: 'JetBrains Mono', monospace;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
       }
 
       header {
@@ -70,10 +71,15 @@
 
       .project-grid {
         display: grid;
-        /* CSS background-repeat Property: https://www.w3schools.com/cssref/pr_background-repeat.php*/
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 20px;
+        max-width: 100%;
+        /* Prevent grid from exceeding the viewport */
+        box-sizing: border-box;
+        /* Include padding in element's width */
+        margin: 0 auto;
+        /* Center the grid on the page */
       }
 
       .project-item {
@@ -86,25 +92,28 @@
       }
 
       .project-item img {
-        max-height: 90%;
-        width: auto;
+        max-width: 100%;
+        height: auto;
         object-fit: contain;
       }
 
       @media screen and (max-width: 600px) {
         .project-grid {
           grid-template-columns: 1fr;
+          /* Single-column layout */
+          padding: 10px;
+          /* Reduce padding for small screens */
         }
 
         .project-item {
-          height: 350px;
-          justify-content: center;
-          align-items: center;
+          height: auto;
+          /* Allow images to adjust dynamically */
         }
 
         h1 {
           font-size: 2rem;
-          padding: 50px;
+          padding: 20px;
+          /* Adjust for better spacing */
         }
       }
     </style>
