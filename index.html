@@ -1,42 +1,149 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Projects - Joshua Metivier's Portfolio</title>
-   <link rel="stylesheet" href="styles.css">
+   <title>Joshua Metivier's Portfolio</title>
+   <style>
+      /* Global Styles */
+      body {
+         background-color: #4D4D4D;
+         font-family: 'JetBrains Mono', monospace;
+         margin: 0;
+         padding: 0;
+      }
+
+      header {
+         background-color: #000;
+         text-align: center;
+         padding: 10px 0;
+      }
+
+      footer {
+         background-color: #C09CCC;
+         text-align: center;
+         padding: 10px 0;
+      }
+
+      /* Centering Banner Image */
+      .center {
+         display: block;
+         margin: 0 auto;
+         width: 80%;
+         max-width: 600px;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+         display: flex;
+         justify-content: center;
+         background-color: #000000;
+         padding: 10px 0;
+      }
+
+      .navbar a {
+         color: white;
+         text-decoration: none;
+         padding: 14px 20px;
+         font-family: 'JetBrains Mono', monospace;
+         font-size: 0.9rem;
+         text-transform: uppercase;
+      }
+
+      .navbar a:hover {
+         background-color: #575757;
+         color: yellow;
+      }
+
+      /* Main Heading */
+      h1 {
+         padding: 50px 20px 20px 100px;
+         color: white;
+         font-size: 3rem;
+         margin: 0 0 10px;
+      }
+
+      /* Project Grid Styles */
+      .project-grid {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+         gap: 20px; /* Space between grid items */
+         padding: 20px;
+      }
+
+      .project-item {
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 700px; /* Uniform height for all items */
+      }
+
+      .project-item img {
+         max-height: 90%; /* Prevents image from exceeding the container */
+         width: auto;
+         object-fit: contain; /* Scales image while preserving aspect ratio */
+      }
+
+      /* Responsive Design for Smaller Screens */
+      @media screen and (max-width: 600px) {
+         .project-grid {
+            grid-template-columns: 1fr; /* Single column for small screens */
+         }
+
+         .project-item {
+            height: auto; /* Allow height to adjust for smaller screens */
+         }
+
+         h1 {
+            font-size: 2rem;
+           padding: 50px;
+         }
+      }
+   </style>
 </head>
+
 <body>
+   <!-- Header with Site Banner -->
    <header>
       <img src="site banner.jpg" alt="Site Banner" class="center">
    </header>
+
+   <!-- Navigation Bar -->
    <nav class="navbar">
       <a href="index.html">Index</a>
       <a href="projects.html" class="active">Projects</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
    </nav>
+
+   <!-- Main Content Section -->
    <main>
       <section>
-         <h1>Projects</h1>
-         <p>Here are some of my featured works.</p>
+         <h1>Featured <br>Projects</h1>
          <div class="project-grid">
             <div class="project-item">
-               <img src="project1.jpg" alt="Project 1">
-               <h2>Project Title 1</h2>
-               <p>Short description of the project.</p>
+               <img src="InstaCore.png" alt="InstaCore Project">
             </div>
             <div class="project-item">
-               <img src="project2.jpg" alt="Project 2">
-               <h2>Project Title 2</h2>
-               <p>Short description of the project.</p>
+               <img src="Elements.png" alt="Elements Project">
             </div>
-            <!-- Add more project items -->
+            <div class="project-item">
+               <img src="StarKreutz.png" alt="StarKreutz Project">
+            </div>
+            <div class="project-item">
+               <img src="Poster project.png" alt="Poster Project">
+            </div>
          </div>
       </section>
    </main>
+
+   <!-- Footer -->
    <footer>
       <p>&copy; 2024 Joshua Metivier</p>
    </footer>
 </body>
+
 </html>
