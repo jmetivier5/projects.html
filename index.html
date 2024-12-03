@@ -27,6 +27,8 @@
         background-color: #C09CCC;
         text-align: center;
         padding: 10px 0;
+        clear: both;
+        position: relative;
       }
 
       .center {
@@ -75,11 +77,8 @@
         gap: 20px;
         padding: 20px;
         max-width: 100%;
-        /* Prevent grid from exceeding the viewport */
         box-sizing: border-box;
-        /* Include padding in element's width */
         margin: 0 auto;
-        /* Center the grid on the page */
       }
 
       .project-item {
@@ -88,7 +87,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 700px;
+        height: auto;
+        min-height: 350px;
       }
 
       .project-item img {
@@ -100,20 +100,16 @@
       @media screen and (max-width: 600px) {
         .project-grid {
           grid-template-columns: 1fr;
-          /* Single-column layout */
           padding: 10px;
-          /* Reduce padding for small screens */
         }
 
         .project-item {
           height: auto;
-          /* Allow images to adjust dynamically */
         }
 
         h1 {
           font-size: 2rem;
           padding: 20px;
-          /* Adjust for better spacing */
         }
       }
     </style>
