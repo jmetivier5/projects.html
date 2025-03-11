@@ -59,10 +59,11 @@
       }
 
       h1 {
-        padding: 50px 20px 20px 100px;
+        padding: 10px 20px;
         color: black;
-        font-size: 3rem;
+        font-size: 6rem;
         margin: 0 0 10px;
+        text-align: center;
       }
 
       p {
@@ -95,6 +96,12 @@
         height: auto;
         object-fit: contain;
       }
+
+      @media screen and (max-width: 600px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
     </style>
   </head>
 
@@ -112,7 +119,7 @@
 
     <main>
       <section>
-        <h1>Featured <br>Projects</h1>
+        <h1>FEATURED <br>PROJECTS</h1>
         <div class="project-grid">
           <div class="project-item">
             <img src="InstaCore.png" alt="InstaCore Project">
